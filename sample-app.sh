@@ -1,6 +1,9 @@
 #!/bin/bash
 set -euo pipefail
 
+docker stop samplerunning || true
+docker rm samplerunning || true
+
 rm -rf tempdir
 
 mkdir tempdir
